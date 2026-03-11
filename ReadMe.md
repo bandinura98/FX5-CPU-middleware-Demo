@@ -11,16 +11,16 @@ This is a middleware program for FX5 plc what it does is
 
 in the photho above you can see its running and it reads and shows the plc values 
 
-<img src="FX5_demo_middleware/FX5_demo_middleware/images/2.png" alt="PLC Diyagramı" width="400"/>
+<img src="FX5_demo_middleware/FX5_demo_middleware/images/2.png" alt="PLC Diyagramı" />
 
 in the photho above you can see it writes the given value to plc
 
-<img src="FX5_demo_middleware/FX5_demo_middleware/images/3.png" alt="PLC Diyagramı" width="400"/>
+<img src="FX5_demo_middleware/FX5_demo_middleware/images/3.png" alt="PLC Diyagramı" />
 
 in the photho above you can see the connection lost situation
 
 
-<img src="FX5_demo_middleware/FX5_demo_middleware/images/4.png" alt="PLC Diyagramı" width="400"/>
+<img src="FX5_demo_middleware/FX5_demo_middleware/images/4.png" alt="PLC Diyagramı" />
 
 in the photho above you can see the reconnected within seconds
 
