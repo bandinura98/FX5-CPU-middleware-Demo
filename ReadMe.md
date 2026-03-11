@@ -1,27 +1,49 @@
 # FX5 CPU Middleware Demo
 
-This is a middleware program for FX5 plc what it does is 
-1) it reads data from plc in every 200ms and shows in the program
-2) it writes given inpt to plc
-3) it checks the connection and if there is any problem with plc connection it writes Connection Lost with red markup and if the connection still it writes Connected with green markup
+This is a middleware program for Mitsubishi FX5 PLC. It provides the following functionality:
 
-# Examples
+1. Reads data from the PLC every 200ms and displays it in the program.
+2. Writes the given input to the PLC.
+3. Monitors the PLC connection. If the connection is lost, it displays **Connection Lost** in red; when reconnected, it displays **Connected** in green.
 
-<img src="FX5_demo_middleware/FX5_demo_middleware/images/1.png" alt="PLC Diyagramı" />
+---
 
-in the photho above you can see its running and it reads and shows the plc values 
+## Requirements
 
-<img src="FX5_demo_middleware/FX5_demo_middleware/images/2.png" alt="PLC Diyagramı" />
+- **.NET Framework:** 4.6.1  
+- **Platform:** 64-bit CPU  
+- **External Library:** COM Library (`ActUtlType64Lib`)
 
-in the photho above you can see it writes the given value to plc
+---
 
-<img src="FX5_demo_middleware/FX5_demo_middleware/images/3.png" alt="PLC Diyagramı" />
+## Examples
 
-in the photho above you can see the connection lost situation
+### Reading Data from PLC
 
+<img src="FX5_demo_middleware/FX5_demo_middleware/images/1.png" alt="PLC Data Reading" />
 
-<img src="FX5_demo_middleware/FX5_demo_middleware/images/4.png" alt="PLC Diyagramı" />
+Above, you can see the program reading and displaying PLC values in real time.
 
-in the photho above you can see the reconnected within seconds
+---
 
+### Writing Data to PLC
 
+<img src="FX5_demo_middleware/FX5_demo_middleware/images/2.png" alt="Writing to PLC" />
+
+Above, you can see the program writing a given value to the PLC.
+
+---
+
+### Connection Lost
+
+<img src="FX5_demo_middleware/FX5_demo_middleware/images/3.png" alt="Connection Lost" />
+
+Above, the program shows the **Connection Lost** state in red when the PLC connection is interrupted.
+
+---
+
+### Reconnection
+
+<img src="FX5_demo_middleware/FX5_demo_middleware/images/4.png" alt="Reconnected" />
+
+Above, the program reconnects to the PLC within seconds and displays **Connected** in green.
