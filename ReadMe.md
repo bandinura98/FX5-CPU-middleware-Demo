@@ -25,7 +25,7 @@ This project is built with a **decoupled service-oriented architecture** to ensu
 The system handles bi-directional communication with a **200ms non-blocking polling rate**, ensuring real-time data flow without UI freezing.
 
 **Visual Proof:**
-<img src="FX5_demo_middleware/FX5_demo_middleware/images/1.png" width="700" alt="PLC Data Reading" />
+<img src="FX5_demo_middleware/FX5_demo_middleware/images/1.png"  alt="PLC Data Reading" />
 *Figure 1: Real-time monitoring of D-Registers.*
 
 ---
@@ -34,7 +34,7 @@ The system handles bi-directional communication with a **200ms non-blocking poll
 Provides a secure interface to write operational parameters directly to the PLC memory.
 
 **Visual Proof:**
-<img src="FX5_demo_middleware/FX5_demo_middleware/images/2.png" width="700" alt="Writing to PLC" />
+<img src="FX5_demo_middleware/FX5_demo_middleware/images/2.png"  alt="Writing to PLC" />
 *Figure 2: Dynamic setpoint management.*
 
 ---
