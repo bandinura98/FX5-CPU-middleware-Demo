@@ -7,7 +7,7 @@ This is a middleware program for FX5 plc what it does is
 
 # Examples
 
-<img src="FX5_demo_middleware/FX5_demo_middleware/images/1.png" alt="PLC Diyagramı" width="900"/>
+<img src="FX5_demo_middleware/FX5_demo_middleware/images/1.png" alt="PLC Diyagramı" width="1200"/>
 
 in the photho above you can see its running and it reads and shows the plc values 
 
