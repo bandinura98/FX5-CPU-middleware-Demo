@@ -1,49 +1,65 @@
-# FX5 CPU Middleware Demo
+# Industrial iQ-F Gateway: Enterprise-Grade PLC Middleware 🏭
 
-This is a middleware program for Mitsubishi FX5 PLC. It provides the following functionality:
+[![Platform](https://img.shields.io/badge/Platform-.NET%20Framework%204.6.1-blue.svg)](https://dotnet.microsoft.com/)
+[![Architecture](https://img.shields.io/badge/Architecture-x64-red.svg)](#)
+[![Hardware](https://img.shields.io/badge/Hardware-Mitsubishi%20FX5U-orange.svg)](#)
 
-1. Reads data from the PLC every 200ms and displays it in the program.
-2. Writes the given input to the PLC.
-3. Monitors the PLC connection. If the connection is lost, it displays **Connection Lost** in red; when reconnected, it displays **Connected** in green.
-
----
-
-## Requirements
-
-- **.NET Framework:** 4.6.1  
-- **Platform:** 64-bit CPU  
-- **External Library:** COM Library (`ActUtlType64Lib`)
+This is a high-performance, **SOLID-compliant** middleware solution designed for robust data acquisition and control between **Mitsubishi iQ-F Series (FX5U) CPUs** and high-level applications. It bridges the gap between the factory floor (OT) and enterprise software (IT).
 
 ---
 
-## Examples
+## 🏗 Modular Architecture
 
-### Reading Data from PLC
+This project is built with a **decoupled service-oriented architecture** to ensure scalability:
 
-<img src="FX5_demo_middleware/FX5_demo_middleware/images/1.png" alt="PLC Data Reading" />
-
-Above, you can see the program reading and displaying PLC values in real time.
-
----
-
-### Writing Data to PLC
-
-<img src="FX5_demo_middleware/FX5_demo_middleware/images/2.png" alt="Writing to PLC" />
-
-Above, you can see the program writing a given value to the PLC.
+* **`Interfaces/`**: Hardware abstraction layer (`IPLCService`, `IDataLogger`).
+* **`Services/`**: Low-level implementation of the **MX Component (ActUtlType64)**.
+* **`Managers/`**: Orchestrates business logic and heartbeat mechanisms.
+* **`Models/`**: Strongly-typed data structures (`PlcData`).
 
 ---
 
-### Connection Lost
+## 🚀 Key Engineering Features
 
-<img src="FX5_demo_middleware/FX5_demo_middleware/images/3.png" alt="Connection Lost" />
+### 1. Real-Time Telemetry & Monitoring
+The system handles bi-directional communication with a **200ms non-blocking polling rate**, ensuring real-time data flow without UI freezing.
 
-Above, the program shows the **Connection Lost** state in red when the PLC connection is interrupted.
+**Visual Proof:**
+<img src="FX5_demo_middleware/FX5_demo_middleware/images/1.png" width="700" alt="PLC Data Reading" />
+*Figure 1: Real-time monitoring of D-Registers.*
 
 ---
 
-### Reconnection
+### 2. Command Execution (Write-Back)
+Provides a secure interface to write operational parameters directly to the PLC memory.
 
-<img src="FX5_demo_middleware/FX5_demo_middleware/images/4.png" alt="Reconnected" />
+**Visual Proof:**
+<img src="FX5_demo_middleware/FX5_demo_middleware/images/2.png" width="700" alt="Writing to PLC" />
+*Figure 2: Dynamic setpoint management.*
 
-Above, the program reconnects to the PLC within seconds and displays **Connected** in green.
+---
+
+### 3. Smart Reconnection Logic (Self-Healing)
+Engineered for the "harsh" reality of industrial networks. The system detects interruptions and attempts to re-establish the socket every 5 seconds (**Back-off strategy**) to prevent socket exhaustion.
+
+**Fault-Tolerance Display:**
+<p align="left">
+  <img src="FX5_demo_middleware/FX5_demo_middleware/images/3.png" width="400" alt="Connection Lost" />
+  <img src="FX5_demo_middleware/FX5_demo_middleware/images/4.png" width="400" alt="Reconnected" />
+</p>
+*Figure 3 & 4: Automatic state transition from 'Connection Lost' to 'Reconnected'.*
+
+---
+
+## 🛠 Tech Stack & Requirements
+
+* **Language:** C# / .NET Framework 4.6.1
+* **Library:** ActUtlType64Lib (Mitsubishi COM Library)
+* **Build Target:** x64 (Optimized for Industrial PCs/IPCs)
+* **Hardware:** Mitsubishi FX5U Series
+
+## 💼 Why This Matters?
+This project demonstrates expertise in **System Architecture**, **Hardware-Software Interoperability**, and **Exception Handling** in mission-critical environments. It is a production-ready blueprint for IIoT Gateway applications.
+
+---
+*Developed by a Software Engineer specialized in Industrial Automation.*
