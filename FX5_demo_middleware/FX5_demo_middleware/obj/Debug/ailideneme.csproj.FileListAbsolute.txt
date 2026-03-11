@@ -1,0 +1,10 @@
+c:\users\bsenoglu\source\repos\ailideneme\ailideneme\bin\Debug\ailideneme.exe.config
+c:\users\bsenoglu\source\repos\ailideneme\ailideneme\bin\Debug\ailideneme.exe
+c:\users\bsenoglu\source\repos\ailideneme\ailideneme\bin\Debug\ailideneme.pdb
+c:\users\bsenoglu\source\repos\ailideneme\ailideneme\obj\Debug\ailideneme.csprojAssemblyReference.cache
+c:\users\bsenoglu\source\repos\ailideneme\ailideneme\obj\Debug\ailideneme.Form1.resources
+c:\users\bsenoglu\source\repos\ailideneme\ailideneme\obj\Debug\ailideneme.Properties.Resources.resources
+c:\users\bsenoglu\source\repos\ailideneme\ailideneme\obj\Debug\ailideneme.csproj.GenerateResource.cache
+c:\users\bsenoglu\source\repos\ailideneme\ailideneme\obj\Debug\ailideneme.csproj.CoreCompileInputs.cache
+c:\users\bsenoglu\source\repos\ailideneme\ailideneme\obj\Debug\ailideneme.exe
+c:\users\bsenoglu\source\repos\ailideneme\ailideneme\obj\Debug\ailideneme.pdb

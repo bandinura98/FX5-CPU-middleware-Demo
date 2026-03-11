@@ -1,0 +1,10 @@
+C:\Users\bsenoglu\source\repos\ailideneme\ailideneme\obj\Debug\github_demo.csprojResolveAssemblyReference.cache
+C:\Users\bsenoglu\source\repos\ailideneme\ailideneme\obj\Debug\ailideneme.Form1.resources
+C:\Users\bsenoglu\source\repos\ailideneme\ailideneme\obj\Debug\ailideneme.Properties.Resources.resources
+C:\Users\bsenoglu\source\repos\ailideneme\ailideneme\obj\Debug\github_demo.csproj.GenerateResource.Cache
+C:\Users\bsenoglu\source\repos\ailideneme\ailideneme\obj\Debug\ailideneme.exe
+C:\Users\bsenoglu\source\repos\ailideneme\ailideneme\obj\Debug\ailideneme.pdb
+C:\Users\bsenoglu\source\repos\ailideneme\ailideneme\bin\Debug\ailideneme.exe.config
+C:\Users\bsenoglu\source\repos\ailideneme\ailideneme\bin\Debug\ailideneme.exe
+C:\Users\bsenoglu\source\repos\ailideneme\ailideneme\bin\Debug\ailideneme.pdb
+C:\Users\bsenoglu\source\repos\ailideneme\ailideneme\bin\Debug\Interop.ActUtlType64Lib.dll
