@@ -19,25 +19,20 @@ namespace fx5_demo
         {
             this.lblStatusTitle = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
-            
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblTemperatureTitle = new System.Windows.Forms.Label();
             this.lblTemperatureValue = new System.Windows.Forms.Label();
-            
+            this.lblTemperatureTitle = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lblSpeedTitle = new System.Windows.Forms.Label();
-            this.lblSpeedValue = new System.Windows.Forms.Label();
             this.pbSpeed = new System.Windows.Forms.ProgressBar();
-            
+            this.lblSpeedValue = new System.Windows.Forms.Label();
+            this.lblSpeedTitle = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lblProductionTitle = new System.Windows.Forms.Label();
             this.lblProductionValue = new System.Windows.Forms.Label();
-            
+            this.lblProductionTitle = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.lblTargetTitle = new System.Windows.Forms.Label();
-            this.txtTargetCount = new System.Windows.Forms.TextBox();
             this.btnSetTarget = new System.Windows.Forms.Button();
-
+            this.txtTargetCount = new System.Windows.Forms.TextBox();
+            this.lblTargetTitle = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -50,20 +45,20 @@ namespace fx5_demo
             this.lblStatusTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblStatusTitle.Location = new System.Drawing.Point(20, 20);
             this.lblStatusTitle.Name = "lblStatusTitle";
-            this.lblStatusTitle.Size = new System.Drawing.Size(125, 21);
+            this.lblStatusTitle.Size = new System.Drawing.Size(188, 21);
             this.lblStatusTitle.TabIndex = 0;
-            this.lblStatusTitle.Text = "PLC Bağl. Durum:";
+            this.lblStatusTitle.Text = "PLC Connection Situation:";
             // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblStatus.ForeColor = System.Drawing.Color.Red;
-            this.lblStatus.Location = new System.Drawing.Point(150, 20);
+            this.lblStatus.Location = new System.Drawing.Point(214, 20);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(95, 21);
+            this.lblStatus.Size = new System.Drawing.Size(114, 21);
             this.lblStatus.TabIndex = 1;
-            this.lblStatus.Text = "Bağlı Değil";
+            this.lblStatus.Text = "Disconnected";
             // 
             // groupBox1
             // 
@@ -75,16 +70,7 @@ namespace fx5_demo
             this.groupBox1.Size = new System.Drawing.Size(200, 120);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Sıcaklık (D100)";
-            // 
-            // lblTemperatureTitle
-            // 
-            this.lblTemperatureTitle.AutoSize = true;
-            this.lblTemperatureTitle.Location = new System.Drawing.Point(20, 30);
-            this.lblTemperatureTitle.Name = "lblTemperatureTitle";
-            this.lblTemperatureTitle.Size = new System.Drawing.Size(55, 19);
-            this.lblTemperatureTitle.TabIndex = 0;
-            this.lblTemperatureTitle.Text = "Derece:";
+            this.groupBox1.Text = "Heat (D100)";
             // 
             // lblTemperatureValue
             // 
@@ -93,9 +79,18 @@ namespace fx5_demo
             this.lblTemperatureValue.ForeColor = System.Drawing.Color.DarkOrange;
             this.lblTemperatureValue.Location = new System.Drawing.Point(20, 50);
             this.lblTemperatureValue.Name = "lblTemperatureValue";
-            this.lblTemperatureValue.Size = new System.Drawing.Size(76, 45);
+            this.lblTemperatureValue.Size = new System.Drawing.Size(79, 45);
             this.lblTemperatureValue.TabIndex = 1;
             this.lblTemperatureValue.Text = "0 °C";
+            // 
+            // lblTemperatureTitle
+            // 
+            this.lblTemperatureTitle.AutoSize = true;
+            this.lblTemperatureTitle.Location = new System.Drawing.Point(20, 30);
+            this.lblTemperatureTitle.Name = "lblTemperatureTitle";
+            this.lblTemperatureTitle.Size = new System.Drawing.Size(89, 19);
+            this.lblTemperatureTitle.TabIndex = 0;
+            this.lblTemperatureTitle.Text = "Temperature:";
             // 
             // groupBox2
             // 
@@ -108,16 +103,15 @@ namespace fx5_demo
             this.groupBox2.Size = new System.Drawing.Size(250, 120);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Hız (D102)";
+            this.groupBox2.Text = "Speed (D102)";
             // 
-            // lblSpeedTitle
+            // pbSpeed
             // 
-            this.lblSpeedTitle.AutoSize = true;
-            this.lblSpeedTitle.Location = new System.Drawing.Point(20, 30);
-            this.lblSpeedTitle.Name = "lblSpeedTitle";
-            this.lblSpeedTitle.Size = new System.Drawing.Size(46, 19);
-            this.lblSpeedTitle.TabIndex = 0;
-            this.lblSpeedTitle.Text = "Değer:";
+            this.pbSpeed.Location = new System.Drawing.Point(24, 65);
+            this.pbSpeed.Maximum = 1000;
+            this.pbSpeed.Name = "pbSpeed";
+            this.pbSpeed.Size = new System.Drawing.Size(200, 30);
+            this.pbSpeed.TabIndex = 2;
             // 
             // lblSpeedValue
             // 
@@ -130,13 +124,14 @@ namespace fx5_demo
             this.lblSpeedValue.TabIndex = 1;
             this.lblSpeedValue.Text = "0";
             // 
-            // pbSpeed
+            // lblSpeedTitle
             // 
-            this.pbSpeed.Location = new System.Drawing.Point(24, 65);
-            this.pbSpeed.Name = "pbSpeed";
-            this.pbSpeed.Size = new System.Drawing.Size(200, 30);
-            this.pbSpeed.TabIndex = 2;
-            this.pbSpeed.Maximum = 1000;
+            this.lblSpeedTitle.AutoSize = true;
+            this.lblSpeedTitle.Location = new System.Drawing.Point(20, 30);
+            this.lblSpeedTitle.Name = "lblSpeedTitle";
+            this.lblSpeedTitle.Size = new System.Drawing.Size(45, 19);
+            this.lblSpeedTitle.TabIndex = 0;
+            this.lblSpeedTitle.Text = "Value:";
             // 
             // groupBox3
             // 
@@ -148,16 +143,7 @@ namespace fx5_demo
             this.groupBox3.Size = new System.Drawing.Size(200, 120);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Üretim Miktarı (D101)";
-            // 
-            // lblProductionTitle
-            // 
-            this.lblProductionTitle.AutoSize = true;
-            this.lblProductionTitle.Location = new System.Drawing.Point(20, 30);
-            this.lblProductionTitle.Name = "lblProductionTitle";
-            this.lblProductionTitle.Size = new System.Drawing.Size(40, 19);
-            this.lblProductionTitle.TabIndex = 0;
-            this.lblProductionTitle.Text = "Adet:";
+            this.groupBox3.Text = "Production Quantity (D101)";
             // 
             // lblProductionValue
             // 
@@ -170,6 +156,15 @@ namespace fx5_demo
             this.lblProductionValue.TabIndex = 1;
             this.lblProductionValue.Text = "0";
             // 
+            // lblProductionTitle
+            // 
+            this.lblProductionTitle.AutoSize = true;
+            this.lblProductionTitle.Location = new System.Drawing.Point(20, 30);
+            this.lblProductionTitle.Name = "lblProductionTitle";
+            this.lblProductionTitle.Size = new System.Drawing.Size(66, 19);
+            this.lblProductionTitle.TabIndex = 0;
+            this.lblProductionTitle.Text = "Quantity:";
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.btnSetTarget);
@@ -181,24 +176,7 @@ namespace fx5_demo
             this.groupBox4.Size = new System.Drawing.Size(686, 100);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Komut Gönder (D200)";
-            // 
-            // lblTargetTitle
-            // 
-            this.lblTargetTitle.AutoSize = true;
-            this.lblTargetTitle.Location = new System.Drawing.Point(20, 42);
-            this.lblTargetTitle.Name = "lblTargetTitle";
-            this.lblTargetTitle.Size = new System.Drawing.Size(81, 19);
-            this.lblTargetTitle.TabIndex = 0;
-            this.lblTargetTitle.Text = "Hedef Adet:";
-            // 
-            // txtTargetCount
-            // 
-            this.txtTargetCount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTargetCount.Location = new System.Drawing.Point(120, 36);
-            this.txtTargetCount.Name = "txtTargetCount";
-            this.txtTargetCount.Size = new System.Drawing.Size(120, 29);
-            this.txtTargetCount.TabIndex = 1;
+            this.groupBox4.Text = "Send Command (D200)";
             // 
             // btnSetTarget
             // 
@@ -210,9 +188,26 @@ namespace fx5_demo
             this.btnSetTarget.Name = "btnSetTarget";
             this.btnSetTarget.Size = new System.Drawing.Size(120, 33);
             this.btnSetTarget.TabIndex = 2;
-            this.btnSetTarget.Text = "Gönder";
+            this.btnSetTarget.Text = "Send";
             this.btnSetTarget.UseVisualStyleBackColor = false;
             this.btnSetTarget.Click += new System.EventHandler(this.btnSetTarget_Click);
+            // 
+            // txtTargetCount
+            // 
+            this.txtTargetCount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTargetCount.Location = new System.Drawing.Point(120, 36);
+            this.txtTargetCount.Name = "txtTargetCount";
+            this.txtTargetCount.Size = new System.Drawing.Size(120, 29);
+            this.txtTargetCount.TabIndex = 1;
+            // 
+            // lblTargetTitle
+            // 
+            this.lblTargetTitle.AutoSize = true;
+            this.lblTargetTitle.Location = new System.Drawing.Point(20, 42);
+            this.lblTargetTitle.Name = "lblTargetTitle";
+            this.lblTargetTitle.Size = new System.Drawing.Size(107, 19);
+            this.lblTargetTitle.TabIndex = 0;
+            this.lblTargetTitle.Text = "Target Quantity:";
             // 
             // Form1
             // 
@@ -229,7 +224,6 @@ namespace fx5_demo
             this.Name = "Form1";
             this.Text = "PLC Monitor Dashboard";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -240,6 +234,7 @@ namespace fx5_demo
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

@@ -48,7 +48,7 @@ namespace fx5_demo
         {
             if (data.IsConnected)
             {
-                lblStatus.Text = "Bağlandı";
+                lblStatus.Text = "Connected";
                 lblStatus.ForeColor = Color.MediumSeaGreen;
 
                 lblTemperatureValue.Text = string.Format("{0} °C", data.Temperature);
@@ -62,7 +62,7 @@ namespace fx5_demo
             }
             else
             {
-                lblStatus.Text = "Bağlantı Koptu...";
+                lblStatus.Text = "Connection Lost...";
                 lblStatus.ForeColor = Color.Red;
             }
         }
@@ -75,17 +75,17 @@ namespace fx5_demo
                 bool success = _plcManager.WriteCommand("D200", value);
                 if (success)
                 {
-                    MessageBox.Show("Hedef adet başarıyla PLC'ye gönderildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("The target quantity was successfully sent to the PLC.", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtTargetCount.Clear();
                 }
                 else
                 {
-                    MessageBox.Show("Komut gönderilemedi. PLC bağlantınızı kontrol edin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("The command could not be sent. Check your PLC connection.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Lütfen geçerli bir tam sayı giriniz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter a valid integer.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
