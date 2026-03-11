@@ -43,10 +43,10 @@ Provides a secure interface to write operational parameters directly to the PLC 
 Engineered for the "harsh" reality of industrial networks. The system detects interruptions and attempts to re-establish the socket every 5 seconds (**Back-off strategy**) to prevent socket exhaustion.
 
 **Fault-Tolerance Display:**
-<p align="left">
-  <img src="FX5_demo_middleware/FX5_demo_middleware/images/3.png" width="400" alt="Connection Lost" />
-  <img src="FX5_demo_middleware/FX5_demo_middleware/images/4.png" width="400" alt="Reconnected" />
-</p>
+
+<img src="FX5_demo_middleware/FX5_demo_middleware/images/3.png"  alt="Connection Lost" />
+<img src="FX5_demo_middleware/FX5_demo_middleware/images/4.png"  alt="Reconnected" />
+
 *Figure 3 & 4: Automatic state transition from 'Connection Lost' to 'Reconnected'.*
 
 ---
